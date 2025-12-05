@@ -5,16 +5,13 @@ import axios from 'axios'
 import { useNavigate , useLocation } from 'react-router-dom'
 import { toast } from 'sonner'
 
-
 const Login = () => {
   const [email,setEmail] = useState("")
   const [password,setPassword] = useState("")
-
   const navigate = useNavigate()
   const {auth,setAuth} = useContext(AuthContext)
   const location = useLocation()
   const API = import.meta.env.VITE_API_URL;
-
   const handleSubmit =  async (e)  =>{
     e.preventDefault()
      try{
@@ -25,7 +22,6 @@ const Login = () => {
         setAuth({...auth, user : data.user, token:data.token })
         localStorage.setItem("auth",JSON.stringify(data))
         navigate(location.state || "/dashboard/tasks/")
-
       }
       else{
         toast.error(data.message)
@@ -83,13 +79,10 @@ const Login = () => {
             </div>
 
             <button type='submit' className=' font-semibold text-xl shadow-md w-4/6 md:w-1/6 bg-white rounded-xl p-3'>Login</button>
-
           </form>
         </div>
       </div>
-    </div>
-    
+    </div>  
   )
 }
-
 export default Login

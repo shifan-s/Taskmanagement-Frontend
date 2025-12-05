@@ -9,10 +9,8 @@ import Task from "./pages/Task"
 import PrivateRoute from "./components/routes/PrivateRoute"
 import ErrorPage from "./pages/ErrorPage"
 
-
 function App() {
   
-
   return (
     <>
       <Routes>
