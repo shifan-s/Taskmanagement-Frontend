@@ -30,7 +30,6 @@ const SignUp = () => {
         toast.error("Something went wrong")
       }
   
-  
     }
   return (
     <div className='

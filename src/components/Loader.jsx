@@ -5,8 +5,6 @@ import Box from '@mui/material/Box';
 import { useState , useEffect } from 'react';
 import { useNavigate  } from 'react-router-dom';
 
-
-
 const Loader = ({path = "login"}) => {
     const [count,setCount] = useState(5)
     const navigate = useNavigate()
