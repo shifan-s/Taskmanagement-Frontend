@@ -46,7 +46,7 @@ const Login = () => {
         <div className='w-full flex flex-col justify-center items-center'>
           <div className='w-full md:w-2/6 flex flex-col items-center justify-center '>
             <h1 className='text-xl text-blue-600 font-bold py-2'>Login</h1>
-            <div className='text-sm font-light text-center'>Welcome ! sign in using your social account or email to continue us</div>
+            <div className='text-sm font-light text-center'>Welcome ! sign in using your social account or email to continue with us!!</div>
           </div>
           <div className='w-full md:w-2/6 flex gap-5 items-center justify-center py-5'>
               <div className='rounded-full bg-white p-2 '>
